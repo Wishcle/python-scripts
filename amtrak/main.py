@@ -1,7 +1,8 @@
 
 from amtrak import search
 
-def main():
+
+def main() -> None:
     s = search.Searcher()
     s.search()
 

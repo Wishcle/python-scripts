@@ -1,15 +1,16 @@
 
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from undetected_geckodriver import Firefox as WebDriver
 import time
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from undetected_geckodriver import Firefox as WebDriver
 
 DEFAULT_TIMEOUT_S = 10
 
 class Searcher:
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.station_src = "PHL"
         self.station_dst = "WIL"
         self.date = "9/10/2025"

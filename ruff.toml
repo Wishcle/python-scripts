@@ -1,0 +1,12 @@
+line-length = 120
+
+[lint]
+select = [
+    "ANN",  # flake8-annotations
+    "E",  # pycodestyle errors
+    "F",  # Pyflakes
+    "I",  # isort
+    "W",  # pycodestyle warnings
+    "PL",  # Pylint
+]
+ignore = []

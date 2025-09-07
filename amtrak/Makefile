@@ -11,11 +11,11 @@ test: lint check
 
 .PHONY: lint
 lint:
-	uvx ruff check
+	uvx ruff check --config "../ruff.toml"
 
 .PHONY: fix
 fix:
-	uvx ruff check --fix
+	uvx ruff check --config "../ruff.toml" --fix
 
 .PHONY: check
 check:
