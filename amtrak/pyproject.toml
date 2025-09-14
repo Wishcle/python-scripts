@@ -11,7 +11,7 @@ dependencies = [
     "ruff>=0.12.11",
     "selenium>=4.35.0",
     "ty>=0.0.1a20",
-    "undetected-geckodriver",
+    "undetected-chromedriver>=3.5.5",
 ]
 
 [build-system]
@@ -20,9 +20,6 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/amtrak"]
-
-[tool.uv.sources]
-undetected-geckodriver = { git = "https://github.com/Wishcle/undetected_geckodriver", rev = "main" }
 
 [project.scripts]
 main = "amtrak:main"
