@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.10"
 dependencies = [
+    "dacite>=1.9.2",
     "selenium>=4.35.0",
     "undetected-chromedriver>=3.5.5",
 ]
